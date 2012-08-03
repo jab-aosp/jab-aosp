@@ -8,7 +8,7 @@
   <default revision="refs/tags/android-4.1.1_r1"
            remote="aosp"
            sync-j="4" />
-  <remote name="jab-aosp" fetch="git://github.com"
+  <remote name="jab-aosp" fetch="git://github.com" />
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
