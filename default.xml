@@ -8,6 +8,7 @@
   <default revision="refs/tags/android-4.1.1_r1"
            remote="aosp"
            sync-j="4" />
+  <remote name="jab-aosp" fetch="git://github.com"
 
   <project path="build" name="platform/build" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -305,5 +306,10 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="platform/system/vold" />
+  <project path="vendor/samsung/toro" name="jab-aosp/vendor_samsung_toro" remote="jab-aosp" revision="master" />
+  <project path="vendor/imgtec/toro" name="jab-aosp/vendor_imgtec_toro" remote="jab-aosp" revision="master" />
+  <project path="vendor/invensense/toro" name="jab-aosp/vendor_invensense_toro" remote="jab-aosp" revision="master" />
+  <project path="vendor/broadcom/toro" name="jab-aosp/vendor_broadcom_toro" remote="jab-aosp" revision="master" />
+  
 
 </manifest>
